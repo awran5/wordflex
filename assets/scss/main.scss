@@ -1,0 +1,203 @@
+/** General **/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.animated {
+    animation-duration: .5s;
+}
+
+a {
+    transition: all .3s ease 0s;
+}
+
+img, figure {
+    max-width: 100%;
+}
+
+.btn-shadow {
+    border: 1px solid #dee2e6;
+    border-radius: 2px;
+    box-shadow: 0 -1.5px rgba(0, 0, 0, 0.22) inset;
+    &:active, &:focus, &:hover {
+        box-shadow: none;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.dot::after {
+    content: '';
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-left: 0.25rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #dc3545;
+}
+
+/** isotope **/
+.isotope-item {
+    z-index: 2
+}
+
+.isotope-hidden.isotope-item {
+    z-index: 1
+}
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    transition-property:         transform, opacity;
+}
+
+.isotope-gallery .gallery-inner {
+    position: relative;
+    overflow: hidden;
+    background: black;
+    opacity: 1;
+}
+
+.isotope-gallery .gallery-inner .image {
+    transition: 0.5s ease;
+}
+
+.isotope-gallery .description {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.isotope-gallery .description .description-heading {
+  font-size: 2rem;
+}
+
+
+.isotope-gallery .description .description-body a {
+  color: #fff;
+  margin-right: .5rem;
+  padding: .5rem .75rem;
+  border: 1px solid #fff;
+}
+
+@media (min-width: 576px) {
+
+  .isotope-gallery .description {
+    opacity: 0; 
+  }
+
+  .isotope-gallery .gallery-inner:hover .description {
+    opacity: 1; 
+  } 
+
+  .isotope-gallery .gallery-inner:hover .image {
+    transform: scale(1.1);
+    opacity: 0.25; 
+  }
+}
+
+.comment-content img, .widget img, .wp-post-image, img.avatar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+.portfolio-container .breadcrumb {
+    background: transparent;
+}
+
+.portfolio-container .breadcrumb-item + .breadcrumb-item::before {
+    color: #ccc;
+}
+
+.portfolio-container .breadcrumb > li > a {
+   color: inherit;
+}
+
+.portfolio-container .breadcrumb > li > a:hover {
+    color: #cc2127;
+    text-decoration: none
+}
+
+/** WordPress Core **/
+@import "wordpress.scss";
+
+/** Header **/
+@import "header.scss";
+
+/** Navbar **/
+@import "navbar.scss";
+
+/** Blog **/
+@import "blog.scss";
+
+/** Sidebar **/
+@import "sidebar.scss";
+
+/** Fooetr **/
+@import "footer.scss";
+
+/** Bootstrap edit **/
+@import "bootstrap-edit.scss";
+
+/** Vendor **/
+@import "vendor.scss";
+
+
+
+
+.top-link-break {
+    border-top: 1px solid rgba(119,119,119,.2);
+    padding: .5rem 0;
+    position: relative;
+}
+
+.top-link-break::after {
+  border-bottom: 1px solid #175e70;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  width: 30px;
+}
+
+
+.portfolio-list .list-item {
+    padding: .25rem 0;
+
+    svg {
+        margin-right: .5rem;
+        color: #aaa
+    }
+}
+
+ .single-featured {
+   transition: opacity 0.3s linear 0s;
+ }
+ 
+ .single-featured:hover {
+   box-shadow: 0 0 0 5px #0b2f38 inset;
+   opacity: 0.8;
+ }

@@ -1,0 +1,92 @@
+/* Post */
+.hentry {
+    margin-bottom: 3rem;
+}
+
+.entry-thumbnail {
+    margin: 1.3rem 0;
+}
+
+.entry-header > span {
+    margin-right: 0.25rem;
+}
+
+.pending-ajax {
+    margin: 0 .5rem;
+    display: none;
+}
+
+.post-author .fn {
+    background: #5cb85c;
+    border-radius: 0.25rem;
+    color: #fff;
+    display: inline-block;
+    padding: .25rem .5rem;
+    a {
+        color: #fff;
+        padding: 0;
+    }
+}
+
+/* Post Socials */
+.post-social {
+    a { 
+        color: #aaa;
+        &:hover {
+            color: #666;
+        }
+    }
+    .list-inline-item:not(:last-child) {
+        margin-right: 1rem;
+}
+
+}
+
+/* Feedback */
+.entry-feedback {
+    .vote-controls > span {
+        margin-right: .5rem;
+        .btn-vote {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            color: #666;
+            padding: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+        }
+        .btn-positive:hover, .voted-positive {
+            color: #6a9c1f;
+        }
+        .btn-negative:hover, .voted-negative {
+            color: #ac2d22;
+        }
+    }
+    .feedback-result {
+        display: none;
+    }
+}
+
+/* Comments */
+.comments-area .comment-list .media .media-body .comment-footer a {
+    margin-left: 0.5rem;
+}
+
+/* Author */
+.author-avatar .avatar {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 1px;
+}
+
+.stats {
+    background-color: #eceeef;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    span {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}

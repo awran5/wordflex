@@ -1,0 +1,79 @@
+/* Top Header */
+.top-header {
+    a {
+        display: block;
+        &:focus, &:hover {
+            text-decoration: none;
+        }
+    }
+    svg {
+        font-size: 1rem;
+    }
+}
+
+/* Inline Header */
+.top-header-inline a {
+    padding: .5rem .25rem;
+}
+
+/* Transparent Header */
+.top-header-transparent {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    a {
+        padding: .5rem .25rem;
+        color: rgba(255, 255, 255, 0.5);
+        &:focus, &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+/* Classic Header */
+.top-header-classic {
+    padding: 3%;
+    a {
+        color: rgba(0, 0, 0, 0.5);
+        &:focus, &:hover {
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    .navbar-brand {
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .header-contact {
+        font-size: .75rem;
+        padding-bottom: 1rem;
+    }
+    .header-social a {
+        margin-right: 1rem;
+    }
+}
+/* site header */
+.site-body {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.header-transparent + .site-body {
+    padding-top: 12rem;
+}
+
+.site-header {
+    transition: all .3s ease 0s;
+    background-color: #343a40;
+}
+
+
+.admin-bar .site-header {
+    top: 32px;
+}
+
+.home {
+    .site-body {
+        padding-top: 0;
+    }
+    .header-transparent {
+        background: transparent;
+    }
+}

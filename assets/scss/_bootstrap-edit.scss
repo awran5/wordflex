@@ -1,0 +1,48 @@
+.jumbotron {
+    box-shadow: 0 1px 0 #ccc;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 400;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.card {
+    img {
+        transition: all 0.3s ease-out 0s;
+    }
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+/* Bootstrap Carousel */
+.carousel {
+    .carousel-indicators {
+        cursor: pointer;
+    }
+    .carousel-inner .carousel-item {
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        background-size: cover;
+        .carousel-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15%;
+            left: 15%;
+            z-index: 10;
+        }
+    }
+}
+
+.header-transparent + .carousel .carousel-item {
+    height: 100vh;
+}
